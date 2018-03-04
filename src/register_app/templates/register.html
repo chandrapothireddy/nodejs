@@ -1,0 +1,63 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<div class="agile-login">
+		<h1>Apps Register Form</h1>
+		<div class="wrapper">
+			<h2>Register</h2>
+			<div class="w3ls-form">
+				<form action="/" method="post">
+
+					<label>Firstname</label>
+					<input type="text" name="first" [(ngModel)]="first" placeholder="Username" required/>
+
+					<label>Latname</label>
+					<input type="text" name="last" [(ngModel)]="last" placeholder="Username" required/>
+
+
+					<label>EmailId</label>
+					<input type="text" name="email" [(ngModel)]="email" placeholder="Username" required/>
+
+
+
+
+					<label>Username</label>
+					<input type="text" name="username" [(ngModel)]="username" placeholder="Username" required/>
+
+
+
+
+					<label>Password</label>
+					<input type="password" [(ngModel)]="password" name="password" placeholder="Password" required />
+					
+					<input type="submit" (click)="postUsers()" value="Register" />
+					
+				</form>
+							
+					<nav>
+    <a routerLink="/login" routerLinkActive="active" class="pass">Login</a>
+    
+  </nav>
+			</div>
+			
+			<div class="agile-icons">
+				<a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+				<a href="#"><span class="fa fa-facebook"></span></a>
+				<a href="#"><span class="fa fa-pinterest-p"></span></a>
+			</div>
+		</div>
+		<br>
+		<div class="copyright">
+		<p>© 2018 Apps Login. All rights reserved | Design by <a href="www.w3layouts.com">Chandra</a></p> 
+	</div>
+	</div>
+	<router-outlet></router-outlet>
+</body>
+</html>

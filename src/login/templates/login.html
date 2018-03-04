@@ -1,0 +1,55 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<div class="agile-login">
+		<h1>Apps Login Form</h1>
+		<div class="wrapper">
+			<h2>Login</h2>
+			<div class="w3ls-form">
+				<form action="/" method="post">
+					<label>Email</label>
+					<input type="text" name="email"  [(ngModel)]="email" placeholder="Email" required/>
+					<label>Password</label>
+					<input type="password" name="password" [(ngModel)]="password" placeholder="Password" required />
+					<a href="#" class="pass">Forgot Password ?</a>
+					<!--<input type="submit" (click)="setValue()" value="LogIn" />
+					<input type="submit" (mouseover)="setValue()" value="LogIn" />
+					<input type="submit" (mouseover)="setValue()" (mousedown)="getValue()" value="LogIn" />
+					<input type="submit" (dblclick)="setValue()" value="LogIn" />
+					<input type="submit" (drag)="setValue()" value="LogIn" />
+					<input type="submit" (dragover)="setValue()" value="LogIn" />
+					<input type="submit" (focus)="setValue()" value="LogIn" />-->
+					<input type="submit" (click)="loginUser()"  value="LogIn" />
+					
+					<nav>
+    <a routerLink="/register" routerLinkActive="active" class="pass">Register</a>
+    
+  </nav>
+  
+					<p>Hello {{username}}!</p>
+					
+					
+				</form>
+			</div>
+			
+			<div class="agile-icons">
+				<a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+				<a href="#"><span class="fa fa-facebook"></span></a>
+				<a href="#"><span class="fa fa-pinterest-p"></span></a>
+			</div>
+		</div>
+		<br>
+		<div class="copyright">
+		<p>© 2018 Apps Login. All rights reserved | Design by <a href="www.w3layouts.com">Chandra</a></p> 
+	</div>
+	</div>
+	
+</body>
+</html>

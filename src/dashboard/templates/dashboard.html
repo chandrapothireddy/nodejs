@@ -1,0 +1,46 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<div class="agile-login">
+		<h1>Dashboard</h1>
+		<div class="wrapper" style="width:800px;">
+			<h2>Dashboard</h2>
+						  
+						  <table border="1" align="center">
+						<tr>
+						<th>S.No</th>	
+						<th>Name</th>	
+						<th>Username</th>	
+						<th>Email</th>	
+						<th>Actions</th>	
+						</tr>  
+						<tr *ngFor="let user of users;let i = index">
+							<td>{{ i+1 }}</td>
+							<td>{{ user.name.first }} {{ user.name.last }}</td>
+							<td>{{ user.username }}</td>
+							<td>{{ user.email }}</td>
+							<td><a  (click)="EditUser(user._id)">Edit</a></td>
+						</tr>
+						</table>
+						  
+						  
+                
+			
+			
+			
+		</div>
+		<br>
+		<div class="copyright">
+		<p>© 2018 Apps Login. All rights reserved | Design by <a href="www.w3layouts.com">Chandra</a></p> 
+	</div>
+	</div>
+	
+</body>
+</html>
